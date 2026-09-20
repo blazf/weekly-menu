@@ -4,9 +4,12 @@ web/.next
 web/tsconfig.tsbuildinfo
 web/next-env.d.ts
 
-# secrets + local state — never commit
+# secrets — never commit
 web/.env
-web/*.db
+
+# lunch.db itself IS committed (rounds, ballots, menus). Run
+#   sqlite3 web/lunch.db "PRAGMA wal_checkpoint(TRUNCATE)"
+# before committing so the WAL is folded into the main file.
 web/*.db-wal
 web/*.db-shm
 web/*.db-journal

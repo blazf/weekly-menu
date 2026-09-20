@@ -80,14 +80,10 @@ function DayCard({
   day: { date: string; dayLabel: string; active: boolean; slug: string | null; title: string | null; votes: number; override: boolean };
   status?: string;
 }) {
+  // Date only up top — a badge here wraps at 7-across and breaks the row.
   const head = (
-    <div className="flex items-center justify-between border-b border-[var(--color-line-hot)] px-2 py-1">
-      <span className="text-xs text-[var(--color-fg-dim)]">{day.dayLabel}</span>
-      {day.active && day.slug && (
-        day.override
-          ? <Tag tone="amber">chef&apos;s pick</Tag>
-          : <Tag tone="green">{day.votes}★</Tag>
-      )}
+    <div className="border-b border-[var(--color-line-hot)] px-2 py-1 text-xs whitespace-nowrap text-[var(--color-fg-dim)]">
+      {day.dayLabel}
     </div>
   );
 
@@ -129,6 +125,12 @@ function DayCard({
             <Tag tone={status === "incomplete" ? "red" : "amber"}>{status === "incomplete" ? "!" : "~"}</Tag>
           </span>
         )}
+        {/* Vote badge over the photo, on a dark backing so it reads on any picture. */}
+        <span className="absolute bottom-2 left-2 bg-[var(--color-bg)]/85 whitespace-nowrap">
+          {day.override
+            ? <Tag tone="amber">chef&apos;s pick</Tag>
+            : <Tag tone="green">{day.votes} vote{day.votes === 1 ? "" : "s"}</Tag>}
+        </span>
       </div>
       <div className="border-t border-[var(--color-line-hot)] px-2 py-1.5">
         <h3 className="line-clamp-2 text-xs leading-snug text-[var(--color-fg)] group-hover:text-[var(--color-green)]">
