@@ -1,0 +1,14 @@
+# web app
+web/node_modules
+web/.next
+web/tsconfig.tsbuildinfo
+web/next-env.d.ts
+
+# secrets + local state — never commit
+web/.env
+web/*.db
+web/*.db-wal
+web/*.db-shm
+web/*.db-journal
+
+.DS_Store
