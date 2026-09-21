@@ -256,8 +256,8 @@ export function AdminConsole({
       {round && (
         <Panel title="results" right={<Tag>{ballots.length} ballots</Tag>}>
           <div className="grid gap-4 px-3 py-3 sm:grid-cols-2">
-            <TallyList title="weekday" rows={tally.weekday} total={ballots.length} />
-            <TallyList title="weekend" rows={tally.weekend} total={ballots.length} />
+            <TallyList title="weekday" rows={tally.weekday} total={ballots.length} voters={votersBy(ballots, "weekday")} />
+            <TallyList title="weekend" rows={tally.weekend} total={ballots.length} voters={votersBy(ballots, "weekend")} />
           </div>
           {ballots.length === 0 && (
             <p className="px-3 pb-3 text-sm text-[var(--color-fg-faint)]">
@@ -487,7 +487,16 @@ function MenuBuilder({
   );
 }
 
-function TallyList({ title, rows, total }: { title: string; rows: TallyRow[]; total: number }) {
+/** Who picked each dish — admin's eyes only; the public menu page stays anonymous. */
+function votersBy(ballots: Ballot[], slot: "weekday" | "weekend"): Map<string, string[]> {
+  const m = new Map<string, string[]>();
+  for (const b of ballots) for (const slug of b[slot]) m.set(slug, [...(m.get(slug) ?? []), b.voter]);
+  return m;
+}
+
+function TallyList({
+  title, rows, total, voters,
+}: { title: string; rows: TallyRow[]; total: number; voters: Map<string, string[]> }) {
   return (
     <div>
       <p className="mb-2 text-xs tracking-wider text-[var(--color-fg-faint)] uppercase">{title}</p>
@@ -497,7 +506,12 @@ function TallyList({ title, rows, total }: { title: string; rows: TallyRow[]; to
             <span className="w-5 shrink-0 text-right text-xs text-[var(--color-fg-faint)] tabular-nums">
               {i + 1}
             </span>
-            <span className="min-w-0 flex-1 truncate">{r.title}</span>
+            <span className="min-w-0 flex-1 truncate">
+              {r.title}
+              <span className="ml-2 text-xs text-[var(--color-fg-faint)]">
+                {(voters.get(r.slug) ?? []).join(", ")}
+              </span>
+            </span>
             <span
               aria-hidden
               className="hidden h-2 bg-[var(--color-green)] sm:block"
