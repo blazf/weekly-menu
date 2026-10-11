@@ -36,6 +36,7 @@ your own photo, drop it in as `<slug>.jpg` and update the row below.
 | `whole-sea-bass-and-potatoes` | [Grilled fish.jpg](https://commons.wikimedia.org/wiki/File:Grilled_fish.jpg) | pompi | CC0 |
 | `burgers` | [Homemade cheeseburger.jpg](https://commons.wikimedia.org/wiki/File:Homemade_cheeseburger.jpg) | Thogru | CC BY 3.0 |
 | `ribeye-steak` | [Ribeye steak, chips, béarnaise sauce.jpg](https://commons.wikimedia.org/wiki/File:Ribeye_steak,_chips,_b%C3%A9arnaise_sauce.jpg) | Socket0 | CC0 |
+| `chicken-tacos` | [Skinny-licious Chicken Tacos from the Cheesecake Fa](https://commons.wikimedia.org/wiki/File:Skinny-licious_Chicken_Tacos_from_the_Cheesecake_Factory_(8494050474).jpg) | m01229 from USA | CC BY 2.0 |
 
 Fetched from Wikimedia Commons; each link goes to the file's description page,
 which carries the authoritative licence and attribution.

@@ -1,6 +1,6 @@
 # Recipes
 
-30 recipes, all in one format (9 of them photo-only placeholders still waiting for ingredients and method). Self-contained: no images, no external links, nothing
+31 recipes, all in one format (9 of them photo-only placeholders still waiting for ingredients and method). Self-contained: no images, no external links, nothing
 that can rot or 404.
 
 There's a small web app in [`web/`](web/README.md) that serves this collection on the
@@ -45,6 +45,7 @@ are **bolded** so they're findable mid-cook. Headings never go deeper than `##`.
 | [Chicken Schnitzel](recipes/mains/chicken-schnitzel.md) | 4 | 30 min | en | ⚠️ |
 | [Ribeye Steak](recipes/mains/ribeye-steak.md) | 2 | 20 min | en | ⚠️ |
 | [Burgers](recipes/mains/burgers.md) | 4 | 40 min | en | ⚠️ |
+| [Chicken Tacos](recipes/mains/chicken-tacos.md) | 4 | 30 min | en | ℹ️ |
 
 ## Pasta & rice
 | Recipe | Servings | Time | Lang | |
@@ -113,14 +114,15 @@ be written. Servings and times are rough guesses.
 
 ## ℹ️ Reconstructed recipes
 
-These three had gaps in the original notes. The gaps are now filled with sensible
+These four had gaps in the original notes. The gaps are now filled with sensible
 defaults so every recipe is cookable — but the filled-in parts are **invented, not
 sourced, and untested**.
 
 | Recipe | What was filled in |
 |---|---|
-| [Lobster Pasta](recipes/pasta-and-rice/lobster-pasta.md) | **The entire method.** Worked out from the ingredients: shell stock from the lobster bodies, reduced into the cream. The biggest leap of the three. |
+| [Lobster Pasta](recipes/pasta-and-rice/lobster-pasta.md) | **The entire method.** Worked out from the ingredients: shell stock from the lobster bodies, reduced into the cream. The biggest leap of the original three. |
 | [Chicken Alfredo](recipes/pasta-and-rice/chicken-alfredo.md) | Ricotta quantity — 1 cup, to balance the pint of cream and cup of Parmesan. |
+| [Chicken Tacos](recipes/mains/chicken-tacos.md) | Everything except the five fillings: quantities, spices, tortillas, lime and the method. |
 | [Malinova torta](recipes/desserts/malinova-torta-z-belo-cokolado.md) | Decoration: fresh raspberries, white chocolate shavings, mint, icing sugar — plus a final assembly step. Cake itself is original. |
 
 ## History
