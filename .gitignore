@@ -15,3 +15,6 @@ web/*.db-shm
 web/*.db-journal
 
 .DS_Store
+
+# start.sh log
+web/server.log

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  LaunchDaemon for lunch@home: runs `next start` on :3000 at boot (no login
+  needed), as user blazf, and restarts it if it dies. Tailscale Serve proxies
+  https://blazs-mac-mini-home.tailf7dcb9.ts.net -> 127.0.0.1:3000.
+
+  Install:   sudo cp web/deploy/home.lunch.web.plist /Library/LaunchDaemons/
+             sudo chown root:wheel /Library/LaunchDaemons/home.lunch.web.plist
+             sudo launchctl bootstrap system /Library/LaunchDaemons/home.lunch.web.plist
+  Restart:   sudo launchctl kickstart -k system/home.lunch.web   (after npm run build)
+  Remove:    sudo launchctl bootout system/home.lunch.web
+  Logs:      ~/Library/Logs/lunch.log
+
+  Node path is pinned to nvm's v24.19.0 — update it if you switch Node versions.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>home.lunch.web</string>
+
+  <key>UserName</key>
+  <string>blazf</string>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/blazf/Projects/hobby/weekly-menu/web</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/blazf/.nvm/versions/node/v24.19.0/bin/node</string>
+    <string>node_modules/next/dist/bin/next</string>
+    <string>start</string>
+    <string>-p</string>
+    <string>3000</string>
+    <string>-H</string>
+    <string>0.0.0.0</string>
+  </array>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/Users/blazf/.nvm/versions/node/v24.19.0/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>NODE_ENV</key>
+    <string>production</string>
+    <key>HOME</key>
+    <string>/Users/blazf</string>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>10</integer>
+
+  <key>StandardOutPath</key>
+  <string>/Users/blazf/Library/Logs/lunch.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/blazf/Library/Logs/lunch.log</string>
+</dict>
+</plist>
