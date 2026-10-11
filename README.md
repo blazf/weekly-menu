@@ -56,19 +56,19 @@ are **bolded** so they're findable mid-cook. Headings never go deeper than `##`.
 | [Seafood Risotto](recipes/pasta-and-rice/seafood-risotto.md) | 8–10 | 50 min | en | |
 | [Chicken Alfredo](recipes/pasta-and-rice/chicken-alfredo.md) | 8 | 35 min | en | ℹ️ |
 | [Lobster Pasta](recipes/pasta-and-rice/lobster-pasta.md) | 4 | 1 h 15 min | en | ℹ️ |
+| [Creamy Garlic Butter Shrimp Pasta](recipes/pasta-and-rice/creamy-garlic-shrimp-pasta.md) | 2 | 20 min | en | |
 
 ## Sauces
 | Recipe | Servings | Time | Lang | |
 |---|---|---|---|---|
 | [Gobova omaka](recipes/sauces/gobova-omaka.md) | ~4 | 20 min | sl | |
+| [Garlic Cream Sauce](recipes/sauces/garlic-cream-sauce.md) | 2 | 10 min | en | ℹ️ |
+| [Gorgonzola Sauce](recipes/sauces/gorgonzola-sauce.md) | 2–3 | 10 min | en | ℹ️ |
 
 ## Seafood
 | Recipe | Servings | Time | Lang | |
 |---|---|---|---|---|
 | [Sesame-Crusted Tuna Steak](recipes/seafood/tuna-steak.md) | 4 | 40 min | en | |
-| [Korean Fried Shrimp](recipes/seafood/korean-fried-shrimp.md) | 4 | 40 min | en | |
-| [Creamy Garlic Shrimp](recipes/seafood/creamy-garlic-shrimp.md) | 4 | 20 min | en | |
-| [Honey Garlic Shrimp](recipes/seafood/honey-garlic-shrimp.md) | 4 | 20 min | en | |
 | [Salmon Steak & Fries](recipes/seafood/salmon-steak-and-fries.md) | 4 | 30 min | en | ⚠️ |
 | [Fish & Chips](recipes/seafood/fish-and-chips.md) | 4 | 45 min | en | ⚠️ |
 | [Whole Sea Bass & Potatoes](recipes/seafood/whole-sea-bass-and-potatoes.md) | 2 | 45 min | en | ⚠️ |
@@ -114,7 +114,7 @@ be written. Servings and times are rough guesses.
 
 ## ℹ️ Reconstructed recipes
 
-These four had gaps in the original notes. The gaps are now filled with sensible
+These six had gaps in the original notes. The gaps are now filled with sensible
 defaults so every recipe is cookable — but the filled-in parts are **invented, not
 sourced, and untested**.
 
@@ -123,6 +123,8 @@ sourced, and untested**.
 | [Lobster Pasta](recipes/pasta-and-rice/lobster-pasta.md) | **The entire method.** Worked out from the ingredients: shell stock from the lobster bodies, reduced into the cream. The biggest leap of the original three. |
 | [Chicken Alfredo](recipes/pasta-and-rice/chicken-alfredo.md) | Ricotta quantity — 1 cup, to balance the pint of cream and cup of Parmesan. |
 | [Chicken Tacos](recipes/mains/chicken-tacos.md) | Everything except the five fillings: quantities, spices, tortillas, lime and the method. |
+| [Garlic Cream Sauce](recipes/sauces/garlic-cream-sauce.md) | Pasta water swapped for milk or water. Otherwise the sauce from Creamy Garlic Butter Shrimp Pasta. |
+| [Gorgonzola Sauce](recipes/sauces/gorgonzola-sauce.md) | **The whole recipe.** No source was given; written from standard technique. |
 | [Malinova torta](recipes/desserts/malinova-torta-z-belo-cokolado.md) | Decoration: fresh raspberries, white chocolate shavings, mint, icing sugar — plus a final assembly step. Cake itself is original. |
 
 ## History
