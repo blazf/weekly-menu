@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <!--
-  LaunchDaemon for lunch@home: runs `next start` on :3000 at boot (no login
+  LaunchDaemon for lunch@home: runs `next start` on :4000 at boot (no login
   needed), as user blazf, and restarts it if it dies. Tailscale Serve proxies
-  https://blazs-mac-mini-home.tailf7dcb9.ts.net -> 127.0.0.1:3000.
+  https://blazs-mac-mini-home.tailf7dcb9.ts.net -> 127.0.0.1:4000.
 
   Install:   sudo cp web/deploy/home.lunch.web.plist /Library/LaunchDaemons/
              sudo chown root:wheel /Library/LaunchDaemons/home.lunch.web.plist
@@ -31,7 +31,7 @@
     <string>node_modules/next/dist/bin/next</string>
     <string>start</string>
     <string>-p</string>
-    <string>3000</string>
+    <string>4000</string>
     <string>-H</string>
     <string>0.0.0.0</string>
   </array>

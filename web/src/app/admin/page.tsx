@@ -24,7 +24,7 @@ export default async function AdminPage() {
 
   const round = getCurrentRound();
   const family = getFamily();
-  const base = process.env.APP_URL ?? "http://localhost:3000";
+  const base = process.env.APP_URL ?? "http://localhost:4000";
 
   const ballots = round ? getBallots(round.id) : [];
   const counts = round ? tally(round.id) : { weekday: [], weekend: [] };

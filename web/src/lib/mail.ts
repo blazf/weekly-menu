@@ -79,7 +79,7 @@ function escapeHtml(s: string) {
 }
 
 export function buildInvites(round: Round): Invite[] {
-  const base = process.env.APP_URL ?? "http://localhost:3000";
+  const base = process.env.APP_URL ?? "http://localhost:4000";
   return getFamily().map((m) => renderInvite(round, m, voteUrl(base, round.id, m.name)));
 }
 
@@ -142,7 +142,7 @@ export async function sendInvites(round: Round): Promise<SendResult> {
 // --- menu announcement ---------------------------------------------------
 
 export function menuUrl(roundId: number): string {
-  const base = (process.env.APP_URL ?? "http://localhost:3000").replace(/\/+$/, "");
+  const base = (process.env.APP_URL ?? "http://localhost:4000").replace(/\/+$/, "");
   return `${base}/menu/${roundId}`;
 }
 

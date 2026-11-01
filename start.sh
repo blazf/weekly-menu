@@ -1,5 +1,5 @@
 #!/bin/zsh
-# Start lunch@home after a reboot: production server on :3000, served over
+# Start lunch@home after a reboot: production server on :4000, served over
 # Tailscale at https://<this-mac>.<tailnet>.ts.net.
 #
 #   ./start.sh          start (builds first if there's no build yet)
@@ -12,7 +12,7 @@ set -euo pipefail
 
 WEB="${0:A:h}/web"
 LOG="$WEB/server.log"
-PORT=3000
+PORT=4000
 TS=/Applications/Tailscale.app/Contents/MacOS/Tailscale
 
 # nvm isn't loaded in non-interactive shells
