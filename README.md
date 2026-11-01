@@ -1,6 +1,6 @@
 # Recipes
 
-31 recipes, all in one format (9 of them photo-only placeholders still waiting for ingredients and method). Self-contained: no images, no external links, nothing
+32 recipes, all in one format (9 of them photo-only placeholders still waiting for ingredients and method). Self-contained: no images, no external links, nothing
 that can rot or 404.
 
 There's a small web app in [`web/`](web/README.md) that serves this collection on the
@@ -78,6 +78,7 @@ are **bolded** so they're findable mid-cook. Headings never go deeper than `##`.
 |---|---|---|---|---|
 | [Gratiniran krompir](recipes/sides/gratiniran-krompir.md) | 2–4 | 1 h 15 min | sl | |
 | [Hrenovke v listnatem testu](recipes/sides/hrenovke-v-listnatem-testu.md) | 15 kosov | 30 min | sl | |
+| [Baked Potatoes](recipes/sides/baked-potatoes.md) | 4 | 1 h | en | |
 
 ## Breakfast
 | Recipe | Servings | Time | Lang | |

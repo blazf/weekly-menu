@@ -7,6 +7,7 @@ your own photo, drop it in as `<slug>.jpg` and update the row below.
 | Recipe | Source file | Author | Licence |
 |---|---|---|---|
 | `american-pancakes` | [Bacon Pancakes - Moksha Caffè 2026-05-03.jpg](https://commons.wikimedia.org/wiki/File:Bacon_Pancakes_-_Moksha_Caff%C3%A8_2026-05-03.jpg) | Andy Li | CC0 |
+| `baked-potatoes` | Supplied by the project owner — source not recorded | — | Unknown |
 | `baked-tangerine-cheesecake` | [DFC 5120 A creamy slice of peach tart on a white pla](https://commons.wikimedia.org/wiki/File:DFC_5120_A_creamy_slice_of_peach_tart_on_a_white_plate_ready_to_be_enjoyed.jpg) | PattayaPatrol | CC BY-SA 4.0 |
 | `belgian-waffles` | [Waffle2.jpg](https://commons.wikimedia.org/wiki/File:Waffle2.jpg) | Hortensja Bukietowa | CC0 |
 | `chicken-alfredo` | [Chicken fettuccine alfredo.JPG](https://commons.wikimedia.org/wiki/File:Chicken_fettuccine_alfredo.JPG) | Dllu | CC BY-SA 4.0 |
