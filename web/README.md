@@ -12,10 +12,10 @@ cd web
 cp .env.example .env      # then edit it — see below
 npm install
 npm run build
-npm start                 # listens on 0.0.0.0:4000
+npm start                 # listens on 0.0.0.0:18624
 ```
 
-Open `http://<server-ip>:4000`.
+Open `http://<server-ip>:18624`.
 
 ## Develop
 
@@ -24,10 +24,10 @@ rebuild and restart. For live updates run the dev server **next to it**:
 
 ```bash
 cd web
-npm run dev               # http://localhost:3101, hot reload
+npm run dev               # http://localhost:18625, hot reload
 ```
 
-It uses port 3101 so it doesn't collide with the production server, and reads
+It uses port 18625 so it doesn't collide with the production server, and reads
 the same recipes folder and `lunch.db`. When you're happy, `npm run build` and
 restart `npm start`. (Recipe `.md` edits never need a rebuild — both servers
 read them on every request.)
@@ -40,7 +40,7 @@ Everything lives in `web/.env`:
 |---|---|
 | `ADMIN_PASSWORD` | Password for `/admin`. **Change it.** |
 | `SECRET` | Signs admin cookies and vote links. `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"` |
-| `APP_URL` | Base URL family members click, e.g. `http://192.168.1.10:4000`. Wrong value = dead vote links. |
+| `APP_URL` | Base URL family members click, e.g. `http://192.168.1.10:18624`. Wrong value = dead vote links. |
 | `FAMILY` | `Name:email` pairs, comma separated. Email may be blank for copy-link-only. |
 | `SMTP_*` | Optional. Leave `SMTP_HOST` empty to stay in preview mode. |
 

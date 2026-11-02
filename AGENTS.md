@@ -110,8 +110,8 @@ in amber (reconstructed) or red (incomplete):
 cd web && npm run typecheck
 
 # the recipe renders
-curl -s localhost:4000/r/<slug> -o /dev/null -w '%{http_code}\n'   # expect 200
-curl -s localhost:4000/api/thumb/<slug> -o /dev/null -w '%{http_code}\n'
+curl -s localhost:18624/r/<slug> -o /dev/null -w '%{http_code}\n'   # expect 200
+curl -s localhost:18624/api/thumb/<slug> -o /dev/null -w '%{http_code}\n'
 ```
 
 A malformed file is skipped rather than crashing the site, so a missing recipe
